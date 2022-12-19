@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+
+  starburst:
+    image: starburstdata/starburst-enterprise:402-e.0
+    container_name: starburst
+    hostname: starburst
+    ports:
+      - 8080:8080
+      
+  postgres:
+    image: postgres
+    container_name: postgres
+    hostname: postgres
+    # user: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgres_pass
+      POSTGRES_DB: postgres_db
