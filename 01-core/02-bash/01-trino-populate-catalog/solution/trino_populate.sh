@@ -3,10 +3,11 @@
 FILE='populate.sql'
 
 echo > $FILE
-for schema in {01..5}; do
+for schema in 0{01..05}; do
   echo "CREATE SCHEMA memory.schema_$schema;" >> $FILE; 
-  for table in {01..10}; do 
+  for table in 0{01..09} {10..10}; do 
     echo "CREATE TABLE memory.schema_$schema.table_$table as select 1 x;" >> $FILE; 
+    echo "CREATE TABLE memory.schema_$schema.table_$table as select 1 x;"
   done;
 done;
 
