@@ -17,7 +17,7 @@ Write a bash script that populates the `memory` catalog with sample schemas and 
   <summary>Hints</summary>
   
   1. Create script file `solution/trino_populate.sh`
-  2. Leverage [variables](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-5.html) and [for loops](https://phoenixnap.com/kb/bash-for-loop) in your script to create the SQL commands and append them to a file (i.e. `populate.sql`)
+  2. Leverage [variables](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-5.html) and [`for` loops](https://phoenixnap.com/kb/bash-for-loop) in your script to create the SQL commands and append them to a file (i.e. `populate.sql`)
   3. Take advantage of the TRINO CLI [`--file` option](https://docs.starburst.io/latest/client/cli.html#batch-mode) to execute SQL statements in batch mode from the file we just populated
 </details>
 
