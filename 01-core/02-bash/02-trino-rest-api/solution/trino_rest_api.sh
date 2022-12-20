@@ -1,6 +1,5 @@
 #! /bin/bash
 
-# query="$@"
 query="show catalogs"
 
 
@@ -13,19 +12,19 @@ echo $nextUri
 
 while [[ $state != 'FINISHED' ]]
 do
-  response=$(curl -s -H 'X-Trino-User: myuser' $nextUri)
-  echo $response
-  # echo $response | jq .
+  response=$(curl -s -H 'X-Trino-User: user' $nextUri)
 
+  #write to stdout each server response
+  echo $response 
   state=$(echo $response | jq -r '.stats.state')
   nextUri=$(echo $response | jq -r '.nextUri')
   data=$(echo $response | jq -r '.data')
   if [ "$data" != "null" ]; then
+
+    #write query output as obtained in data field
     output=$data
   fi
 
 done
 
-echo 
-echo $output
-
+echo $output 

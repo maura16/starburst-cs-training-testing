@@ -1,0 +1,3 @@
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED          STATUS          PORTS                    NAMES
+eb317ae01926   starburstdata/starburst-enterprise:399-e   "/usr/lib/starburst/…"   23 minutes ago   Up 23 minutes   0.0.0.0:8080->8080/tcp   starburst
+1d2eb1977aae   postgres                                   "docker-entrypoint.s…"   23 minutes ago   Up 23 minutes   0.0.0.0:5432->5432/tcp   postgres
