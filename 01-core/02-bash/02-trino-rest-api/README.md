@@ -16,8 +16,8 @@ Write the answer to `solution/out` file.
 <details>
   <summary>Hints</summary>
   
-  1. Create script file `solution/trino_rest_api.sh`
-  2. Use `jq` to save the response attributes we are interested in to a variable (i.e. `$(echo $response | jq -r '.nextUri')`) 
-  3. Leverage a [`while` loop](https://www.geeksforgeeks.org/bash-scripting-while-loop/) to continue fetching query results and break out of the loop when the response `state='FINISHED'`
-  4. Run the script (`trino_rest_api.sh`) and redirect [stdout](https://linuxhint.com/bash_stdin_stderr_stdout/) to `solution/out`:
+  1. Create script file i.e. `solution/trino_rest_api.sh`
+  2. Leverage `jq` to save the response attributes we are interested in to a variable (i.e. `$(echo $response | jq -r '.nextUri')`) 
+  3. Use a [`while` loop](https://www.geeksforgeeks.org/bash-scripting-while-loop/) to continuously fetch query results until the query has completed (break out of the loop when the response `state='FINISHED'`)
+  4. Run the script and redirect [stdout](https://linuxhint.com/bash_stdin_stderr_stdout/) to `solution/out` for validation
 </details>
