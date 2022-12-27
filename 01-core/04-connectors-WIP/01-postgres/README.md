@@ -1,8 +1,7 @@
 # CORE / Connectors / PostgreSQL
 
 ## Pre-requisites
-Docs Reference:
-
+Docs reference: 
 - [PostgreSQL Connector](https://docs.starburst.io/latest/connector/postgresql.html)
 - [Starburst PostgreSQL Connector](https://docs.starburst.io/latest/connector/starburst-postgresql.html)
 
@@ -13,5 +12,7 @@ Configure Starburst to connect to PostgreSQL database.
 - Add and configure `postgres` catalog in Starburst
 - Create a `myschema` schema
 - Create an empty `mytable` table in the above schema
-- Use a CTAS statement to create a table `orders_tiny` based off of `tpch.tiny.orders`
-- Select first 5 records from `orders_tiny` table sorted by `orderkey` and dump the results to `solution/orders_tiny.txt` file
+- Use a CTAS statement to create a table `orders_tiny` based off of
+  `tpch.tiny.orders`
+- Select first 5 records from `orders_tiny` table sorted by `orderkey` and dump
+  the results to `solution/orders_tiny.txt` file
