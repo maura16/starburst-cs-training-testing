@@ -1,0 +1,423 @@
+[
+  {
+    "id": 1,
+    "guid": "ffeb5486-34a2-4df5-9ae1-77f0311abf31",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - catalog, session-property",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - catalog, session-property",
+    "isAuditEnabled": true,
+    "resources": {
+      "session-property": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "catalog": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "update",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 2,
+    "guid": "c838557d-96f9-4c7a-949c-fcbcb671ff2d",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - query",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - query",
+    "isAuditEnabled": true,
+    "resources": {
+      "query": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "execute",
+            "isAllowed": true
+          },
+          {
+            "type": "kill",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 3,
+    "guid": "72daad01-b457-48be-b9f6-e277b3412e36",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - system-session-property",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - system-session-property",
+    "isAuditEnabled": true,
+    "resources": {
+      "system-session-property": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "update",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 4,
+    "guid": "6d938796-9db0-4a9d-86bd-5e694d459f45",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - function",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - function",
+    "isAuditEnabled": true,
+    "resources": {
+      "function": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "execute",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 5,
+    "guid": "7b9c3dc8-f8b7-4693-a86f-bfda2a0e2d5c",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - user",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - user",
+    "isAuditEnabled": true,
+    "resources": {
+      "user": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "impersonate",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 6,
+    "guid": "e5b0bbb8-2cca-4c4e-8185-56a591fc1415",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - catalog, schema, procedure",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - catalog, schema, procedure",
+    "isAuditEnabled": true,
+    "resources": {
+      "schema": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "catalog": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "procedure": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "execute",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 7,
+    "guid": "8b8d1c68-02a2-4206-8123-147b6e17aede",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - catalog, schema, table, column",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - catalog, schema, table, column",
+    "isAuditEnabled": true,
+    "resources": {
+      "schema": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "catalog": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "column": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "table": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "insert",
+            "isAllowed": true
+          },
+          {
+            "type": "delete",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "ownership",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  }
+]

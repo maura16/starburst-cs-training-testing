@@ -1,0 +1,1025 @@
+[
+  {
+    "id": 1,
+    "guid": "bf7300a7-49be-496e-8ee6-0e2bd35ff21c",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - catalog, session-property",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - catalog, session-property",
+    "isAuditEnabled": true,
+    "resources": {
+      "session-property": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "catalog": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "update",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 2,
+    "guid": "c9b7696f-73f7-41e7-8d4d-db5a0306fed1",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - query",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - query",
+    "isAuditEnabled": true,
+    "resources": {
+      "query": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "execute",
+            "isAllowed": true
+          },
+          {
+            "type": "kill",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 3,
+    "guid": "8fb53330-6cc1-4e0f-b815-ecf5ba2575c6",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - system-session-property",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - system-session-property",
+    "isAuditEnabled": true,
+    "resources": {
+      "system-session-property": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "update",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 4,
+    "guid": "8cd42672-dfcc-4f62-9d32-de2800b1415a",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - function",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - function",
+    "isAuditEnabled": true,
+    "resources": {
+      "function": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "execute",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 5,
+    "guid": "fa03c146-e85b-461b-ae39-21b61093e73a",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - user",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - user",
+    "isAuditEnabled": true,
+    "resources": {
+      "user": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "impersonate",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 6,
+    "guid": "c7b60646-091d-4941-aae2-c602c1b00c16",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - catalog, schema, procedure",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - catalog, schema, procedure",
+    "isAuditEnabled": true,
+    "resources": {
+      "schema": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "catalog": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "procedure": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "execute",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  },
+  {
+    "id": 7,
+    "guid": "a3e682cb-e323-4b0f-b0d6-4262c42c62e3",
+    "isEnabled": true,
+    "version": 1,
+    "service": "starburst-enterprise",
+    "name": "all - catalog, schema, table, column",
+    "policyType": 0,
+    "policyPriority": 0,
+    "description": "Policy for all - catalog, schema, table, column",
+    "isAuditEnabled": true,
+    "resources": {
+      "schema": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "catalog": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "column": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      },
+      "table": {
+        "values": [
+          "*"
+        ],
+        "isExcludes": false,
+        "isRecursive": false
+      }
+    },
+    "policyItems": [
+      {
+        "accesses": [
+          {
+            "type": "select",
+            "isAllowed": true
+          },
+          {
+            "type": "insert",
+            "isAllowed": true
+          },
+          {
+            "type": "delete",
+            "isAllowed": true
+          },
+          {
+            "type": "update",
+            "isAllowed": true
+          },
+          {
+            "type": "ownership",
+            "isAllowed": true
+          },
+          {
+            "type": "create",
+            "isAllowed": true
+          },
+          {
+            "type": "drop",
+            "isAllowed": true
+          },
+          {
+            "type": "alter",
+            "isAllowed": true
+          }
+        ],
+        "users": [
+          "starburst_service_user"
+        ],
+        "groups": [],
+        "roles": [],
+        "conditions": [],
+        "delegateAdmin": true
+      }
+    ],
+    "denyPolicyItems": [],
+    "allowExceptions": [],
+    "denyExceptions": [],
+    "dataMaskPolicyItems": [],
+    "rowFilterPolicyItems": [],
+    "serviceType": "starburst-enterprise",
+    "options": {},
+    "validitySchedules": [],
+    "policyLabels": [],
+    "zoneName": "",
+    "isDenyAllElse": false
+  }
+]
+{
+  "startIndex": 0,
+  "pageSize": 200,
+  "totalCount": 8,
+  "resultSize": 8,
+  "sortType": "asc",
+  "sortBy": "loginId",
+  "queryTimeMS": 1671507865096,
+  "vXPortalUsers": [
+    {
+      "id": 1,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "admin",
+      "status": 1,
+      "firstName": "Admin",
+      "lastName": "",
+      "publicScreenName": "Admin",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_SYS_ADMIN"
+      ],
+      "userPermList": [
+        {
+          "id": 1,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 1,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "admin",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 2,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 1,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "admin",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 3,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 1,
+          "moduleId": 4,
+          "isAllowed": 1,
+          "userName": "admin",
+          "moduleName": "Audit"
+        },
+        {
+          "id": 4,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 1,
+          "moduleId": 2,
+          "isAllowed": 1,
+          "userName": "admin",
+          "moduleName": "Users/Groups"
+        },
+        {
+          "id": 5,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 1,
+          "moduleId": 6,
+          "isAllowed": 1,
+          "userName": "admin",
+          "moduleName": "Tag Based Policies"
+        },
+        {
+          "id": 21,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 1,
+          "moduleId": 7,
+          "isAllowed": 1,
+          "userName": "admin",
+          "moduleName": "Security Zone"
+        }
+      ],
+      "groupPermissions": []
+    },
+    {
+      "id": 7,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "alice",
+      "status": 1,
+      "firstName": "alice",
+      "lastName": "alice",
+      "publicScreenName": "alice alice",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_USER"
+      ],
+      "userPermList": [
+        {
+          "id": 33,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 9,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "alice",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 34,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 9,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "alice",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 35,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 9,
+          "moduleId": 7,
+          "isAllowed": 1,
+          "userName": "alice",
+          "moduleName": "Security Zone"
+        }
+      ],
+      "groupPermissions": []
+    },
+    {
+      "id": 5,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "bill",
+      "status": 1,
+      "firstName": "bill",
+      "lastName": "bill",
+      "publicScreenName": "bill bill",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_USER"
+      ],
+      "userPermList": [
+        {
+          "id": 30,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 8,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "bill",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 31,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 8,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "bill",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 32,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 8,
+          "moduleId": 7,
+          "isAllowed": 1,
+          "userName": "bill",
+          "moduleName": "Security Zone"
+        }
+      ],
+      "groupPermissions": []
+    },
+    {
+      "id": 8,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "bob",
+      "status": 1,
+      "firstName": "bob",
+      "lastName": "bob",
+      "publicScreenName": "bob bob",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_USER"
+      ],
+      "userPermList": [
+        {
+          "id": 36,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 10,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "bob",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 37,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 10,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "bob",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 38,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:27Z",
+          "owner": "rangerusersync",
+          "updatedBy": "rangerusersync",
+          "userId": 10,
+          "moduleId": 7,
+          "isAllowed": 1,
+          "userName": "bob",
+          "moduleName": "Security Zone"
+        }
+      ],
+      "groupPermissions": []
+    },
+    {
+      "id": 3,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "keyadmin",
+      "status": 1,
+      "firstName": "keyadmin",
+      "lastName": "",
+      "publicScreenName": "keyadmin",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_KEY_ADMIN"
+      ],
+      "userPermList": [
+        {
+          "id": 11,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 3,
+          "moduleId": 5,
+          "isAllowed": 1,
+          "userName": "keyadmin",
+          "moduleName": "Key Manager"
+        },
+        {
+          "id": 12,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 3,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "keyadmin",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 13,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 3,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "keyadmin",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 19,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 3,
+          "moduleId": 2,
+          "isAllowed": 1,
+          "userName": "keyadmin",
+          "moduleName": "Users/Groups"
+        },
+        {
+          "id": 20,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 3,
+          "moduleId": 4,
+          "isAllowed": 1,
+          "userName": "keyadmin",
+          "moduleName": "Audit"
+        }
+      ],
+      "groupPermissions": []
+    },
+    {
+      "id": 4,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "rangertagsync",
+      "status": 1,
+      "firstName": "rangertagsync",
+      "lastName": "",
+      "publicScreenName": "rangertagsync",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_SYS_ADMIN"
+      ],
+      "userPermList": [
+        {
+          "id": 14,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 4,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "rangertagsync",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 15,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 4,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "rangertagsync",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 16,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 4,
+          "moduleId": 4,
+          "isAllowed": 1,
+          "userName": "rangertagsync",
+          "moduleName": "Audit"
+        },
+        {
+          "id": 17,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 4,
+          "moduleId": 2,
+          "isAllowed": 1,
+          "userName": "rangertagsync",
+          "moduleName": "Users/Groups"
+        },
+        {
+          "id": 18,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 4,
+          "moduleId": 6,
+          "isAllowed": 1,
+          "userName": "rangertagsync",
+          "moduleName": "Tag Based Policies"
+        },
+        {
+          "id": 23,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 4,
+          "moduleId": 7,
+          "isAllowed": 1,
+          "userName": "rangertagsync",
+          "moduleName": "Security Zone"
+        }
+      ],
+      "groupPermissions": []
+    },
+    {
+      "id": 2,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "rangerusersync",
+      "status": 1,
+      "firstName": "rangerusersync",
+      "lastName": "",
+      "publicScreenName": "rangerusersync",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_SYS_ADMIN"
+      ],
+      "userPermList": [
+        {
+          "id": 6,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 2,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "rangerusersync",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 7,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 2,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "rangerusersync",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 8,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 2,
+          "moduleId": 4,
+          "isAllowed": 1,
+          "userName": "rangerusersync",
+          "moduleName": "Audit"
+        },
+        {
+          "id": 9,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 2,
+          "moduleId": 2,
+          "isAllowed": 1,
+          "userName": "rangerusersync",
+          "moduleName": "Users/Groups"
+        },
+        {
+          "id": 10,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 2,
+          "moduleId": 6,
+          "isAllowed": 1,
+          "userName": "rangerusersync",
+          "moduleName": "Tag Based Policies"
+        },
+        {
+          "id": 22,
+          "createDate": "2022-12-20T02:52:02Z",
+          "updateDate": "2022-12-20T02:52:02Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 2,
+          "moduleId": 7,
+          "isAllowed": 1,
+          "userName": "rangerusersync",
+          "moduleName": "Security Zone"
+        }
+      ],
+      "groupPermissions": []
+    },
+    {
+      "id": 6,
+      "createDate": null,
+      "updateDate": null,
+      "loginId": "starburst_service_user",
+      "status": 1,
+      "firstName": "starburst_service_user",
+      "publicScreenName": "starburst_service_user",
+      "userSource": 0,
+      "userRoleList": [
+        "ROLE_SYS_ADMIN"
+      ],
+      "userPermList": [
+        {
+          "id": 24,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:26Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 7,
+          "moduleId": 3,
+          "isAllowed": 1,
+          "userName": "starburst_service_user",
+          "moduleName": "Reports"
+        },
+        {
+          "id": 25,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:26Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 7,
+          "moduleId": 1,
+          "isAllowed": 1,
+          "userName": "starburst_service_user",
+          "moduleName": "Resource Based Policies"
+        },
+        {
+          "id": 26,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:26Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 7,
+          "moduleId": 4,
+          "isAllowed": 1,
+          "userName": "starburst_service_user",
+          "moduleName": "Audit"
+        },
+        {
+          "id": 27,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:26Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 7,
+          "moduleId": 2,
+          "isAllowed": 1,
+          "userName": "starburst_service_user",
+          "moduleName": "Users/Groups"
+        },
+        {
+          "id": 28,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:26Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 7,
+          "moduleId": 6,
+          "isAllowed": 1,
+          "userName": "starburst_service_user",
+          "moduleName": "Tag Based Policies"
+        },
+        {
+          "id": 29,
+          "createDate": "2022-12-20T02:52:26Z",
+          "updateDate": "2022-12-20T02:52:26Z",
+          "owner": "Admin",
+          "updatedBy": "Admin",
+          "userId": 7,
+          "moduleId": 7,
+          "isAllowed": 1,
+          "userName": "starburst_service_user",
+          "moduleName": "Security Zone"
+        }
+      ],
+      "groupPermissions": []
+    }
+  ]
+}
