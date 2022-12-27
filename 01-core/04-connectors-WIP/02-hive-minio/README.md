@@ -1,14 +1,16 @@
 # Hive + MinIO
 
-Step 1 - Spin up a SEP environment (393-e.3) that enables a Hive catalog that talks to the Minio object storage
+## Pre-requisites
+Docs reference: 
+- [Starburst Hive Connector](https://docs.starburst.io/latest/connector/starburst-hive.html)
+- [MinIO storage support](https://docs.starburst.io/latest/connector/starburst-minio.html)
 
-- Leverage minio-hdfs docker demo here
-
-Step 2 - Create a schema in your newly created Hive catalog
-
-Step 3 - Use a CTAS statement to create a table test based off of tpch.tiny.orders
-
-Step 4 - Run a query against the test table
+## Task
+Configure Starburst to connect to a Hive catalog that talks to the MinIO object storage.
+- Spin up a SEP environment (393-e.3) using `minio-hdfs` docker demo
+- Create a `myschema` schema in your newly created Hive catalog
+- Use a CTAS statement to create a `myorders` test table based off of `tpch.tiny.orders` 
+- Run a query against the `myorders` table that returns data of only `URGENT` priorities ordered by highest total price and limited to 10 records. Dump the results to `solution/hive_orders.txt` file
 
 ## Validation
 

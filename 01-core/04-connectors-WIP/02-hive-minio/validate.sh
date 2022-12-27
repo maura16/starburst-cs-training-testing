@@ -7,11 +7,8 @@
 cd $(dirname $BATS_TEST_FILENAME)
 function contains { grep "$2" solution/$1 > /dev/null; }
 
-@test "postgres.properties contents" {
-  contains postgres.properties 'connector.name=postgresql'
+@test "hive_orders.txt contents" {
+  contains hive_orders.txt '"44707","1013","O","431771.98"'
+  contains hive_orders.txt '"11296","832","F","378166.33"'
 }
 
-@test "orders_tiny.txt contents" {
-  contains orders_tiny.txt '"1","370","O","172799.49"'
-  contains orders_tiny.txt '"5","445","F","105367.67"'
-}
