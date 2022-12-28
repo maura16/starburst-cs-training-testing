@@ -1,3 +1,11 @@
+/*
+Additional ideas: 
+- If the answer is wrong, add a reference for docs 
+- Quiz continues until user gets a passing score
+- validation = passing quiz 
+- could be a mixture of MC, fill in the blank, etc. 
+*/ 
+
 const rs =require('readline-sync');
 //import chalk from 'chalk';
 const chalk = require('chalk');
