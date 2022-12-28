@@ -19,3 +19,6 @@ Make sure you can explain the following SSL concepts.
 9. What is needed to set up the client?
 
 Revisit the above concepts again after finishing this chapter.
+
+## Quiz on concepts
+In your terminal, navigate to the `test` folder in this module. Run `node ssl-quiz.js` and complete the quiz with a passing score. 
