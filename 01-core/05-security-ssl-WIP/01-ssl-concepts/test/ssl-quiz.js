@@ -7,7 +7,8 @@ Additional ideas:
 */ 
 
 const rs =require('readline-sync');
-//import chalk from 'chalk';
+
+//chalk makes console text pretty/easier to read for quiz format
 const chalk = require('chalk');
 console.log(chalk.green.bold("Hive MinIO connector Quiz \n"));
 
@@ -34,6 +35,7 @@ function gamePlay(listOfAnswers, questions, correctAnswer){
     console.log(chalk.blue('\n----------------\n'));  
 }
 
+//list of multiple choice questions and answers
 var mcqList = [
     {
         array: ['A) Secure Socket Layer', 'B) Straight Socket Loop', 'C) Secure Server Layout', 'D) Special Security License'],
@@ -41,17 +43,31 @@ var mcqList = [
         answer: 'A'
     },
     {
-        array: ['A. Bob private key', 'B. Alice public key', 'C. Bob public key', 'D. Alice private key'],
+        array: ['A) Bob private key', 'B) Alice public key', 'C) Bob public key', 'D) Alice private key'],
         question: '2. If Bob wants to send an encrypted message to Alice, which key does he use?',
         answer: 'B'
-    }
+    },
+    {
+        array: ['A) SSL', 'B) TLS', 'C) None', 'D) Both'],
+        question: '3. What protocols are used with HTTPS for security mechanism?',
+        answer: 'D',
+        //optionally add explanations in cases of wrong answers on 3rd try? 
+        //explanation: 'Both SSL and TLS protocols are used to implement a security mechanism with HTTPS.'
+    },
+    {
+        array: ['A) SSL protocol is used for securing communication by sending and receiving data in the encrypted format.', 'B) SSL uses certificates to implement a secure mechanism.', 'C) SSL also used to save data into memory in a secure manner.', 'D) They are all correct.'],
+        question: '4. Which of the following statements is not correct about SSL?',
+        answer: 'C',
+        //optionally add explanations in cases of wrong answers on 3rd try? 
+        //explanation: 'Both SSL and TLS protocols are used to implement a security mechanism with HTTPS.'
+    },
 ]
+
 for(let i =0; i<mcqList.length;i++){
     gamePlay(mcqList[i].array,mcqList[i].question,mcqList[i].answer);
-    //console.log('********************* \n');
 }
 
-if(score >= 4){
+if(score >= 6){
     console.log(chalk.green('Congratulations, you passed! Score: ',score));
 }
 else{
