@@ -9,6 +9,8 @@ var score = 0;
 function gamePlay(listOfAnswers, questions, correctAnswer){
     console.log(chalk.bgGray.cyanBright(questions), '\n');
     for(let i=0; i<listOfAnswers.length; i++){ console.log(chalk.cyanBright(listOfAnswers[i], '\n'))}
+    
+    //reads answer given from terminal for us in conditional check
     var answer = rs.question("Answer: ");
     
     if(answer == correctAnswer){
