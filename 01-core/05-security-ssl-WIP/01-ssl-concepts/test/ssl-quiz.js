@@ -3,7 +3,8 @@ Additional ideas:
 - If the answer is wrong, add a reference for docs 
 - Quiz continues until user gets a passing score
 - validation = passing quiz 
-- could be a mixture of MC, fill in the blank, etc. 
+- could be a mixture of MC, fill in the blank, etc.
+- can template better to just read questions/answers from a JSON file?  
 */ 
 
 const rs =require('readline-sync');
@@ -34,8 +35,22 @@ function gamePlay(listOfAnswers, questions, correctAnswer){
     console.log(chalk.yellowBright('Your score is: ' + score));    
     console.log(chalk.blue('\n----------------\n'));  
 }
+function shuffleArray(mcqList){
+    let cur = mcqList.length; 
+    while (cur != 0){
+        let randId = Math.floor(Math.random() * cur);
+        cur -= 1;
+        //swap
+        let tmp = mcqList[cur];
+        mcqList[cur] = mcqList[randId];
+        mcqList[randId] = tmp;
+    }
+    return mcqList;
+}
 
 //list of multiple choice questions and answers
+//can probably template this to populate this array from a json file
+//if we want to use this quiz code in other areas 
 var mcqList = [
     {
         array: ['A) Secure Socket Layer', 'B) Straight Socket Loop', 'C) Secure Server Layout', 'D) Special Security License'],
@@ -55,19 +70,17 @@ var mcqList = [
         //explanation: 'Both SSL and TLS protocols are used to implement a security mechanism with HTTPS.'
     },
     {
-        array: ['A) SSL protocol is used for securing communication by sending and receiving data in the encrypted format.', 'B) SSL uses certificates to implement a secure mechanism.', 'C) SSL also used to save data into memory in a secure manner.', 'D) They are all correct.'],
+        array: ['A) SSL protocol is used for securing communication by sending and receiving data in the encrypted format.', 'B) SSL uses certificates to implement a secure mechanism.', 'C) SSL is used to save data into memory in a secure manner.', 'D) They are all correct.'],
         question: '4. Which of the following statements is not correct about SSL?',
         answer: 'C',
-        //optionally add explanations in cases of wrong answers on 3rd try? 
-        //explanation: 'Both SSL and TLS protocols are used to implement a security mechanism with HTTPS.'
-    },
+    }
 ]
-
-for(let i =0; i<mcqList.length;i++){
-    gamePlay(mcqList[i].array,mcqList[i].question,mcqList[i].answer);
+var mcqShuffled = shuffleArray(mcqList);
+for(let i =0; i<mcqShuffled.length;i++){
+    gamePlay(mcqShuffled[i].array,mcqShuffled[i].question,mcqShuffled[i].answer);
 }
 
-if(score >= 6){
+if(score >= (mcqList.length - 2)){
     console.log(chalk.green('Congratulations, you passed! Score: ',score));
 }
 else{
