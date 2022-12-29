@@ -17,8 +17,12 @@ var score = 0;
 
 //function checks whether user answer is correct or not
 function gamePlay(listOfAnswers, questions, correctAnswer){
-    console.log(chalk.bgGray.cyanBright(questions), '\n');
-    for(let i=0; i<listOfAnswers.length; i++){ console.log(chalk.cyanBright(listOfAnswers[i], '\n'))}
+    var qCount = 1;
+    console.log(chalk.bgGray.cyanBright(qCount + ". ", questions), '\n');
+    for(let i=0; i<listOfAnswers.length; i++){ 
+        console.log(chalk.cyanBright(String.fromCharCode(i + 97) + ") ", listOfAnswers[i], '\n'))
+    
+    }
     
     //reads answer given from terminal for us in conditional check
     var answer = rs.question("Answer: ");
@@ -32,7 +36,7 @@ function gamePlay(listOfAnswers, questions, correctAnswer){
         //console.log(chalk.greenBright("Correct Answer is: "+correctAnswer));
         score = score-1;
     }
-    console.log(chalk.yellowBright('Your score is: ' + score));    
+    //console.log(chalk.yellowBright('Your score is: ' + score));    
     console.log(chalk.blue('\n----------------\n'));  
 }
 function shuffleArray(mcqList){
@@ -53,28 +57,49 @@ function shuffleArray(mcqList){
 //if we want to use this quiz code in other areas 
 var mcqList = [
     {
-        array: ['A) Secure Socket Layer', 'B) Straight Socket Loop', 'C) Secure Server Layout', 'D) Special Security License'],
-        question: '1. What does "SSL" stand for?',
-        answer: 'A'
+        array: ['Internet layers', 'Internet protocols', 'Network layers', 'Cryptographic protocols'],
+        question: 'What are TLS and SSL?',
+        answer: 'd'
     },
     {
-        array: ['A) Bob private key', 'B) Alice public key', 'C) Bob public key', 'D) Alice private key'],
-        question: '2. If Bob wants to send an encrypted message to Alice, which key does he use?',
-        answer: 'B'
+        array: ['True', 'False'],
+        question: 'HTTPS is a combination of the Hypertext Transfer Protocol combined with the older SSL or newer TLS protocol to provide encryption and secure identification of the server.',
+        answer: 'a'
     },
     {
-        array: ['A) SSL', 'B) TLS', 'C) None', 'D) Both'],
-        question: '3. What protocols are used with HTTPS for security mechanism?',
-        answer: 'D',
+        array: ['HTTP','SSL/TLS','SMTP','TCP/IP'],
+        question: 'Which of the following protocols are primarily used to establish a secure connection between browsers and servers so that no data is lost?',
+        answer: 'b'
         //optionally add explanations in cases of wrong answers on 3rd try? 
         //explanation: 'Both SSL and TLS protocols are used to implement a security mechanism with HTTPS.'
     },
     {
-        array: ['A) SSL protocol is used for securing communication by sending and receiving data in the encrypted format.', 'B) SSL uses certificates to implement a secure mechanism.', 'C) SSL is used to save data into memory in a secure manner.', 'D) They are all correct.'],
-        question: '4. Which of the following statements is not correct about SSL?',
-        answer: 'C',
+        array: ['True','False'],
+        question: 'TLS offers stronger protection than SSL.',
+        answer: 'a'
+    },
+    {
+        array: ['To increase chances of testing encryption capabilities', 'Assure all of your information cannot be decrypted', 'Decrease resources', 'Prevent unauthorized access to private networks and sensitive information during its most vulnerable state'],
+        question: 'Why is it crucial to encrypt data in transit?',
+        answer: 'd'
+    },
+    {
+        array: ['Asymmetric encryption', 'Symmetric encryption', 'Both', 'Neither'],
+        question: 'What type of encryption does SSL/TLS use?',
+        answer: 'c'
+    },
+    {
+        array: ['Non-repudiation', 'Authentication','Integrity protection','All of the above'],
+        question: 'Digital signatures provide which of the following?',
+        answer: 'd'
+    },
+    {
+        array: ['Private Key Infrastructure','Virtual Key Infrastructure', 'Public Key Infrastructure','All of the above.'],
+        question: 'Which of the following enables secure and private data exchange/transfer on an unsecure public network? ',
+        answer: 'c'
     }
 ]
+
 var mcqShuffled = shuffleArray(mcqList);
 for(let i =0; i<mcqShuffled.length;i++){
     gamePlay(mcqShuffled[i].array,mcqShuffled[i].question,mcqShuffled[i].answer);
