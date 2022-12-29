@@ -11,21 +11,20 @@ const rs =require('readline-sync');
 
 //chalk makes console text pretty/easier to read for quiz format
 const chalk = require('chalk');
-console.log(chalk.green.bold("Hive MinIO connector Quiz \n"));
+console.log(chalk.green.bold("\n \tHive MinIO connector Quiz \n"));
 
 var score = 0;
 
 //function checks whether user answer is correct or not
 function gamePlay(listOfAnswers, questions, correctAnswer){
     var qCount = 1;
-    console.log(chalk.bgGray.cyanBright(qCount + ". ", questions), '\n');
+    console.log(chalk.bgBlue(qCount + ". ", questions));
     for(let i=0; i<listOfAnswers.length; i++){ 
-        console.log(chalk.cyanBright(String.fromCharCode(i + 97) + ") ", listOfAnswers[i], '\n'))
+        console.log(chalk.blue(String.fromCharCode(i + 97) + ") ", listOfAnswers[i]))
     
     }
-    
     //reads answer given from terminal for us in conditional check
-    var answer = rs.question("Answer: ");
+    var answer = rs.question("\nAnswer: ");
     
     if(answer == correctAnswer){
         console.log(chalk.green('\nCorrect!'));
@@ -95,8 +94,18 @@ var mcqList = [
     },
     {
         array: ['Private Key Infrastructure','Virtual Key Infrastructure', 'Public Key Infrastructure','All of the above.'],
-        question: 'Which of the following enables secure and private data exchange/transfer on an unsecure public network? ',
+        question: 'Which of the following enables secure and private data exchange/transfer on an unsecure public network?',
         answer: 'c'
+    },
+    {
+        array: ['The user', 'The browser', 'The server','The Web application'],
+        question: 'Who really checks the validity of a Digital certificate?',
+        answer: 'b'
+    },
+    {
+        array: ['Private Key','Free Key','Public Key','Personal Key'],
+        question: 'What type of key is not shared and computers cannot decrypt a message without it?',
+        answer: 'a'
     }
 ]
 
